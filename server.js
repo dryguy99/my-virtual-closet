@@ -19,7 +19,7 @@ if (!process.env.MONGODB_URI){
         mongoose.connect("mongodb://localhost/PP")
     }
     else{
-        mongoose.connect(process.ENV.MONGODB_URI)
+        mongoose.connect(process.env.MONGODB_URI)
     }
 
 require('./src/config/passport')(passport); // pass passport for configuration
