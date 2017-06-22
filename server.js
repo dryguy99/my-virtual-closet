@@ -19,7 +19,7 @@ if (!process.env.MONGODB_URI){
         mongoose.connect("mongodb://localhost/PP")
     }
     else{
-        mongoose.connect(process.env.MONGODB_URI)
+        mongoose.connect(process.ENV.MONGODB_URI)
     }
 
 require('./src/config/passport')(passport); // pass passport for configuration
@@ -38,6 +38,9 @@ app.use(session({
 }));
 app.use(passport.initialize());
 app.use(passport.session()); // persistent login sessions
+app.get('/', function(req,res) {
+  res.sendFile(__dirname + "/pubic/index.html");
+});
 app.use(flash()); // use connect-flash for flash messages stored in session
 
 // routes ======================================================================
