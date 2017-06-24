@@ -6,6 +6,7 @@ import './Login.css';
 import LocalLogin from './components/LocalLogin';
 import LocalSignup from './components/LocalSignup';
 import ConnectLocal from './components/ConnectLocal';
+import Profile from './components/Profile';
 /*import Tooltip from 'react-bootstrap/lib/Tooltip';
 import Popover from 'react-bootstrap/lib/Popover';
 import OverlayTrigger from 'react-bootstrap/lib/OverlayTrigger'; */

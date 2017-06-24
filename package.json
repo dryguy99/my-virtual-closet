@@ -99,6 +99,8 @@
     "extends": "react-app"
   },
   "engines": {
-    "node": "8.0.0"
+    "node": "8.0.0",
+    "yarn": "0.24.6",
+    "npm": "5.0.3"
   }
 }

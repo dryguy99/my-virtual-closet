@@ -20,7 +20,7 @@ class App extends Component {
                   <h2 className="title">Welcome to Kelly's Closet!</h2>
                 </div>
             </div>
-            <h2 className="title-heading">My Closet</h2>
+            <h2 className="title-heading">My Closet #1</h2>
           </div>
         </div>
         <Login/>

@@ -4,7 +4,7 @@
 // get all the tools we need
 var express  = require('express');
 var app      = express();
-var port     = process.env.PORT || 3000;
+//var port     = process.env.PORT || 3000;
 var mongoose = require('mongoose');
 var passport = require('passport');
 var flash    = require('connect-flash');
@@ -26,10 +26,10 @@ require('./src/config/passport')(passport); // pass passport for configuration
 
 // set up our express application
 app.use(morgan('dev')); // log every request to the console
-app.use(bodyParser.urlencoded({ extended: false }))// parse application/x-www-form-urlencoded
-app.use(bodyParser.json())// parse application/json
+app.use(bodyParser.urlencoded({ extended: false }));// parse application/x-www-form-urlencoded
+app.use(bodyParser.json());// parse application/json
 app.set('view engine', 'ejs'); // set up ejs for templating
-app.use(express.static("build"))
+app.use(express.static("build"));
 app.use(session({
     secret: 'ilovescotchscotchyscotchscotch',
     name: "K-Closet",
